@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NasaPictures</string>
+    <string name="title">Title:</string>
+    <string name="copyright">Copyright:</string>
+    <string name="date">Date:</string>
+    <string name="explanation">Explanation:</string>
+</resources>
