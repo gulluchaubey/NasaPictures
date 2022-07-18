@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
-import com.example.nasapictures.NasaDetails.NasaDetailActivity
+import com.example.nasapictures.nasaDetails.NasaDetailActivity
 import com.example.nasapictures.R
 import com.example.nasapictures.databinding.ActivityNasaAllDataBinding
 import com.example.nasapictures.utils.Status
@@ -18,7 +17,7 @@ import kotlinx.coroutines.*
 class NasaAllDataActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityNasaAllDataBinding
-    val nasaAllDataViewModel : NasaAllDataViewModel by viewModels()
+    private val nasaAllDataViewModel : NasaAllDataViewModel by viewModels()
     private lateinit var nasaAllDataAdapter:NasaAllDataAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,10 +40,7 @@ class NasaAllDataActivity : AppCompatActivity() {
                             ClickHandler(data)
                         }
                         binding.recyclerViewAllImg.adapter = nasaAllDataAdapter
-
-                        suspend {delay(30000)
-                            binding.progressBar.visibility=View.GONE
-                        }
+                        binding.progressBar.visibility=View.GONE
                     }
                 }
             }
