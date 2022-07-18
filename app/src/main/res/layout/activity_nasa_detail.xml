@@ -40,6 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
     <TextView
         android:id="@+id/tvTitleHeading"
         android:layout_width="0dp"
@@ -136,9 +137,9 @@
         android:text="@{nasaDetail.explanation}"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_5sdp"
-        app:layout_constraintStart_toEndOf="@+id/tvExplanationHeading"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDateHeading"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvExplanationHeading"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

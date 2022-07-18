@@ -20,7 +20,12 @@
         <TextView
             android:id="@+id/tvToolbarTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/_16sdp"/>
 
     </androidx.appcompat.widget.Toolbar>
 

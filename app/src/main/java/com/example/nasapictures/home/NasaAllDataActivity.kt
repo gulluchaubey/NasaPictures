@@ -24,6 +24,9 @@ class NasaAllDataActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_nasa_all_data)
 
+        binding.toolbar.tvToolbarTitle.text="Nasa Images"
+        binding.toolbar.ivBack.visibility=View.GONE
+
 
         setContentView(binding.root)
         nasaAllDataViewModel.getNasaData()

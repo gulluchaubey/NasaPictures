@@ -1,11 +1,17 @@
 package com.example.nasapictures.nasaDetails
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.example.nasapictures.R
 import com.example.nasapictures.databinding.ActivityNasaDetailBinding
 import com.example.nasapictures.home.NasaAllDataItem
+import java.security.AccessController.getContext
+
 
 class NasaDetailActivity : AppCompatActivity() {
 
@@ -29,9 +35,6 @@ class NasaDetailActivity : AppCompatActivity() {
         binding.toolbar.ivBack.setOnClickListener {
             onBackPressed()
         }
-
-
-
         binding.recyclerViewImgDetail.adapter=NasaDetailImageAdapter(this,imgList)
 
 
