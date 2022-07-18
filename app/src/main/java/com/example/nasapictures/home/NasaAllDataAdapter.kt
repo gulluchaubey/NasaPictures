@@ -27,6 +27,5 @@ class NasaAllDataAdapter(private var mcontext:Context,var list:ArrayList<NasaAll
             binding.nasaData = data
             binding.root.setOnClickListener { clickHandler.invoke(data) }
         }
-
     }
 }
